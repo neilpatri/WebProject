@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('moon.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     min-height: 100vh;
+}
+
+.container {
+    background-color: rgba(68, 68, 68, 0.4);
+    backdrop-filter: blur(7px);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    height: 58%;
+    width: 70%;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(5, 80, 21, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 28px;
+    color: #a2c508;
+}
+
+.quote-input {
+    background: #1a1919;
+    width: 90%;
+    height: 55px;
+    border: 2px solid #777674;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 8px;
+    resize: none;
+    color: white;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    margin-bottom: 50px;
+    font-size: 16px;
+    color: #a9a9a9;
+}
+button#start-btn {
+    background: #777674;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 90%;
+    height: 45px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button#start-btn:hover {
+    background: #a2c508;
+    box-shadow: 0 0 10px #a2c508;
+  }
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-color: #a2c508;
+    box-shadow: 0 0 10px #a2c508; 
+}
+
+.container:hover {
+    border-color: #a2c508; 
+    box-shadow: 0 0 10px #a2c508; 
+}
+
+.incorrect input[type="text"]{
+    border-color: red;
+}
+
+.field-group {
+  width: 100%;
+  margin-bottom: 25px;    
+  text-align: center;     
+}
+
+.input-msg {
+  display: block;           /* one line under the input */
+  font-size: 14px;
+  color: #ff5252;           /* red by default – change as you like */
+  min-height: 18px;         /* reserves space even when empty */
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+@media (max-width: 1100px) {
+    .container {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .quote-input {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .stats {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 14px;
+    }
+
+    button#start-btn {
+        width: 100%;
+        font-size: 14px;
+    }
+}

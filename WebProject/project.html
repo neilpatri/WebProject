@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="wrapper">
+        <form class="container">
+            <h1>Login</h1>
+
+            <div class="field-group">
+                <input type="text" id="name" class="quote-input" placeholder="Username" autocomplete="off" required/>
+                <small id="name-msg" class="input-msg"></small>
+            </div>
+
+            <div class="field-group">
+                <input type="password" id="pass" class="quote-input" placeholder="Password" autocomplete="off" required/>
+                <small id="pass-msg" class="input-msg"></small>
+            </div>
+
+            <div class="stats" id="stats">
+                <label for="remember" class="remember">
+                <input type="checkbox" id="remember"/> Remember me
+                </label>
+            </div>
+
+            <button id="start-btn" onclick="checkField(event)">Login</button>
+        </form>
+    </div>
+    <script src="sample.js"></script>
+</body>
+</html>
